@@ -259,16 +259,16 @@ footer {
 -----------------------------------------*/
 /*common*/
 .help{
-	background: url('../images/help.jpg') 50% 0 repeat-y fixed;
+	background: url('http://ob89r3lvl.bkt.clouddn.com/help.jpg-big') 50% 0 repeat-y fixed;
 }
 .broker{
-	background: url('../images/intro-bg.jpg') 50% 0 repeat-y fixed;
+	background: url('http://ob89r3lvl.bkt.clouddn.com/intro-bg.jpg-big') 50% 0 repeat-y fixed;
 }
 .studyTour{
-  background: url('../images/city.jpg') 50% 0 repeat-y fixed;
+  background: url('http://ob89r3lvl.bkt.clouddn.com/city.jpg-big') 50% 0 repeat-y fixed;
 }
 .Aboutus{
-	background: url('../images/building.jpg') 50% 0 repeat-y fixed;
+	background: url('http://ob89r3lvl.bkt.clouddn.com/building.jpg-big') 50% 0 repeat-y fixed;
 }
 #intro {
     -webkit-background-size: cover;
@@ -322,7 +322,7 @@ footer {
   font-weight: 300;
 }
 .tour-button {
-    background-image: url(../images/tour-icon1.png);
+    background-image: url('http://ob89r3lvl.bkt.clouddn.com/tour-icon1.png');
     height: 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -502,7 +502,7 @@ footer {
 /* Counter section styles
 /* ========================================== */
 #counter {
-   background: url('../images/counter-bg.jpg') 50% 0 repeat-y fixed;
+   background: url('http://ob89r3lvl.bkt.clouddn.com/counter-bg.jpg-big') 50% 0 repeat-y fixed;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -586,7 +586,7 @@ p {
     Regsiter section
 -----------------------------------------*/
 #register {
-    background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('http://ob89r3lvl.bkt.clouddn.com/register-bg.jpg-big') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -692,7 +692,7 @@ p {
    Venue section
 -----------------------------------------*/
 #venue {
-    background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('http://ob89r3lvl.bkt.clouddn.com/venue-bg.jpg-big') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
     padding-top: 7rem;
@@ -719,7 +719,7 @@ p {
    Contact section
 -----------------------------------------*/
 #contact {
-    background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('http://ob89r3lvl.bkt.clouddn.com/contact-bg.jpg-big') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
 }
