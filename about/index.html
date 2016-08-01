@@ -65,7 +65,7 @@
 				<li><a href="/broker" class="smoothScroll">券商实习</a></li>
 				<li><a href="/studytour" class="smoothScroll">游学</a></li>
 				<!-- <li><a href="Broker.html" class="smoothScroll">留学</a></li> -->
-				<li><a href="/about" class="smoothScroll">关于我们</a></li>
+				<li class="active"><a href="/about" class="smoothScroll">关于我们</a></li>
 			</ul>
 		</div>
 	</div>
@@ -236,15 +236,15 @@
 
 
 var data = [
-  {avatar:'images/team/wzl.png',name:'吴政霖&nbsp;&nbsp;&nbsp;&nbsp;CEO',detail:'吴政霖，男，1992年出生于江苏南通市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司创始人兼CEO，中欧商学院学员，江苏企业家协会会员，2015年7月毕业于南京审计大学会计学（中澳方向）专业，大三那年收到阿朗的新加坡市场经理全职offer，他依然选择了创业。',heading:'headingOne',collapse:'collapseOne'},
-  {avatar:'images/team/lk.png',name:'刘开&nbsp;&nbsp;&nbsp;&nbsp;CTO',detail:'刘开，男，1992年出生于江苏南京市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司产品合伙人兼CTO，负责公司产品与技术开发，2014.6~2015.8在BSH任职财务控制专员；2015.9~2016.4在BSH任职SAP商务智能专员；精通项目管理／预测／营销战略／产品开发／SAP／SQL／JavaScript／VBA/Photoshop等专业知识和技术；2014年7月毕业于南京审计大学会计学专业。',heading:'headingTwo',collapse:'collapseTwo'},
-  {avatar:'images/team/gx.png',name:'葛霄&nbsp;&nbsp;&nbsp;&nbsp;COO',detail:'葛霄，男，1994年出生于江苏南通市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司运营合伙人兼COO，负责公司产品线上线下运营，2014.6~2015.5在平安保险任职金牌boss团讲师，专门负责市场营销战略及运营，2015年7月毕业于南京审计大学物流管理专业。',heading:'headingThree',collapse:'collapseThree'},
-  {avatar:'images/team/zzy.png',name:'赵宗阳&nbsp;&nbsp;&nbsp;&nbsp;游学事业部主管',detail:'赵宗阳，男，1992年出生于河南南阳市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司合伙人兼游学事业部主管，2016年7月毕业于南京审计大学会计学专业。',heading:'headingFour',collapse:'collapseFour'},
-  {avatar:'images/team/syx.png',name:'沈宇翔&nbsp;&nbsp;&nbsp;&nbsp;CMO',detail:'沈宇翔，男，1992年出生于山东济南市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司合伙人兼CMO，2015.7~2016.8供职于上海立信会计事务所审计部，2015年7月毕业于山东财经大学会计学专业。',heading:'headingFive',collapse:'collapseFive'},
-  {avatar:'images/team/syx.png',name:'朱灿&nbsp;&nbsp;&nbsp;&nbsp;职培事业部主管',detail:'朱灿，男，1992年出生于江苏南通市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司职培事业部主管，2015年7月毕业于南京审计大学土木工程专业。',heading:'headingSix',collapse:'collapseSix'},
-  {avatar:'images/team/tn.png',name:'陶楠&nbsp;&nbsp;&nbsp;&nbsp;UI设计师',detail:'陶楠，男，1994年出生于江苏张家港市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司UI设计师，大三学生，2016年7月将毕业于南京工业大学土木工程专业。',heading:'headingSeven',collapse:'collapseSeven'},
-  {avatar:'images/team/lx.png',name:'李幸&nbsp;&nbsp;&nbsp;&nbsp;PM',detail:'李幸，女，1985年出生于江苏徐州市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司产品经理。',heading:'headingEight',collapse:'collapseEight'},
-  {avatar:'images/team/zl.png',name:'赵磊&nbsp;&nbsp;&nbsp;&nbsp;人事主管',detail:'赵磊，女，1994年出生于江苏南京市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司人事主管，2015年7月毕业于河海大学文天学院会计学专业。',heading:'headingNine',collapse:'collapseNine'},
+  {avatar:'../images/team/wzl.png',name:'吴政霖&nbsp;&nbsp;&nbsp;&nbsp;CEO',detail:'吴政霖，男，1992年出生于江苏南通市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司创始人兼CEO，中欧商学院学员，江苏企业家协会会员，2015年7月毕业于南京审计大学会计学（中澳方向）专业，大三那年收到阿朗的新加坡市场经理全职offer，他依然选择了创业。',heading:'headingOne',collapse:'collapseOne'},
+  {avatar:'../images/team/lk.png',name:'刘开&nbsp;&nbsp;&nbsp;&nbsp;CTO',detail:'刘开，男，1992年出生于江苏南京市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司产品合伙人兼CTO，负责公司产品与技术开发，2014.6~2015.8在BSH任职财务控制专员；2015.9~2016.4在BSH任职SAP商务智能专员；精通项目管理／预测／营销战略／产品开发／SAP／SQL／JavaScript／VBA/Photoshop等专业知识和技术；2014年7月毕业于南京审计大学会计学专业。',heading:'headingTwo',collapse:'collapseTwo'},
+  {avatar:'../images/team/gx.png',name:'葛霄&nbsp;&nbsp;&nbsp;&nbsp;COO',detail:'葛霄，男，1994年出生于江苏南通市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司运营合伙人兼COO，负责公司产品线上线下运营，2014.6~2015.5在平安保险任职金牌boss团讲师，专门负责市场营销战略及运营，2015年7月毕业于南京审计大学物流管理专业。',heading:'headingThree',collapse:'collapseThree'},
+  {avatar:'../images/team/zzy.png',name:'赵宗阳&nbsp;&nbsp;&nbsp;&nbsp;游学事业部主管',detail:'赵宗阳，男，1992年出生于河南南阳市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司合伙人兼游学事业部主管，2016年7月毕业于南京审计大学会计学专业。',heading:'headingFour',collapse:'collapseFour'},
+  {avatar:'../images/team/syx.png',name:'沈宇翔&nbsp;&nbsp;&nbsp;&nbsp;CMO',detail:'沈宇翔，男，1992年出生于山东济南市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司合伙人兼CMO，2015.7~2016.8供职于上海立信会计事务所审计部，2015年7月毕业于山东财经大学会计学专业。',heading:'headingFive',collapse:'collapseFive'},
+  {avatar:'../images/team/syx.png',name:'朱灿&nbsp;&nbsp;&nbsp;&nbsp;职培事业部主管',detail:'朱灿，男，1992年出生于江苏南通市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司职培事业部主管，2015年7月毕业于南京审计大学土木工程专业。',heading:'headingSix',collapse:'collapseSix'},
+  {avatar:'../images/team/tn.png',name:'陶楠&nbsp;&nbsp;&nbsp;&nbsp;UI设计师',detail:'陶楠，男，1994年出生于江苏张家港市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司UI设计师，大三学生，2016年7月将毕业于南京工业大学土木工程专业。',heading:'headingSeven',collapse:'collapseSeven'},
+  {avatar:'../images/team/lx.png',name:'李幸&nbsp;&nbsp;&nbsp;&nbsp;PM',detail:'李幸，女，1985年出生于江苏徐州市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司产品经理。',heading:'headingEight',collapse:'collapseEight'},
+  {avatar:'../images/team/zl.png',name:'赵磊&nbsp;&nbsp;&nbsp;&nbsp;人事主管',detail:'赵磊，女，1994年出生于江苏南京市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司人事主管，2015年7月毕业于河海大学文天学院会计学专业。',heading:'headingNine',collapse:'collapseNine'},
   // {avatar:'images/team/jdd.png',name:'嵇丹丹&nbsp;&nbsp;&nbsp;&nbsp;行政',detail:'嵇丹丹，女，1992年出生于江苏南通市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司行政',heading:'headingTen',collapse:'collapseTen'},
   // {avatar:'images/team/xj.png',name:'许佳&nbsp;&nbsp;&nbsp;&nbsp;职培事业部项目经理',detail:'许佳，女，1994年出生于江苏常州市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司职培事业部项目经理，大三学生，南非开普敦交流半年，2017年7月将毕业于南京审计大学会计学专业。',heading:'headingEleven',collapse:'collapseEleven'},
   // {avatar:'images/team/syx.png',name:'周思睿&nbsp;&nbsp;&nbsp;&nbsp;校园推广',detail:'周思睿，女，1997年出生于江苏南通市，南京碧云轩教育咨询有限公司&南京职行网络科技有限公司校园推广，大二学生，2018年7月毕业于南京审计大学会计学专业。',heading:'headingTwelve',collapse:'collapseTwelve'},
