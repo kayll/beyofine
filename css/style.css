@@ -67,13 +67,13 @@ a {
 #speakers,
 #program,
 #sponsors,
-#contact,#show, footer {
+#contact,#show,#global, footer {
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
 #detail,
-#speakers, #show,#sponsors,
+#speakers, #show,#sponsors,#global,
 footer {
   text-align: center;
 }
@@ -85,7 +85,7 @@ footer {
 #contact h3 {
     padding-bottom: 12px;
 }
-
+#venue .btn,
 #intro .btn,
 #contact .btn {
     background: transparent;
@@ -103,18 +103,23 @@ footer {
 }
 
 #intro .btn-danger,
+#venue .btn-danger,
 #contact .btn-danger {
     background: #f2545f;
     border-color: transparent;
 }
-
+#venue .btn,
 #contact .btn {
   border-radius: 100px;
 }
-
 #intro .btn-danger:hover {
   background: transparent;
   border-color: #ffffff;
+  color: #ffffff;
+}
+#venue .btn-danger:hover {
+  background: #000000;
+  border-color: #000000;
   color: #ffffff;
 }
 
@@ -127,6 +132,7 @@ footer {
     color: #333333;
     border-color: transparent;
 }
+
 
 .parallax-section {
   background-attachment: fixed !important;
@@ -190,7 +196,7 @@ footer {
 -----------------------------------------*/
 .custom-navbar {
     margin-bottom: 0;
-    background-color:rgb(141, 141, 141);
+    background-color:#292929;
 }
 
 .custom-navbar .navbar-brand {
@@ -246,7 +252,7 @@ footer {
         background: 0 0;
     }
     .custom-navbar.top-nav-collapse {
-        background:rgba(141, 141, 141,0.9);
+        background:rgba(41, 41, 41,0.9);
         padding: 0;
     }
 
@@ -259,16 +265,16 @@ footer {
 -----------------------------------------*/
 /*common*/
 .help{
-	background: url('http://ob89r3lvl.bkt.clouddn.com/help.jpg-big') 50% 0 repeat-y fixed;
+	background: url('http://ob89r3lvl.bkt.clouddn.com/help.jpg-big');
 }
 .broker{
-	background: url('http://ob89r3lvl.bkt.clouddn.com/intro-bg.jpg-big') 50% 0 repeat-y fixed;
+	background: url('http://ob89r3lvl.bkt.clouddn.com/intro-bg.jpg-big');
 }
 .studyTour{
-  background: url('http://ob89r3lvl.bkt.clouddn.com/city.jpg-big') 50% 0 repeat-y fixed;
+  background: url('http://ob89r3lvl.bkt.clouddn.com/city.jpg-big');
 }
 .Aboutus{
-	background: url('http://ob89r3lvl.bkt.clouddn.com/building.jpg-big') 50% 0 repeat-y fixed;
+	background: url('http://ob89r3lvl.bkt.clouddn.com/building.jpg-big');
 }
 #intro {
     -webkit-background-size: cover;
@@ -364,20 +370,21 @@ footer {
 /*---------------------------------------
    Speakers section
 -----------------------------------------*/
+#global,
 #speakers{
     background: #f9f9f9;
 }
-
+#global,
 #speakers h3 {
     font-size: 18px;
     margin-bottom: 0px;
 }
-
+#global,
 #speakers h6 {
   color: #666;
   margin-top: 4px;
 }
-
+#global,
 #speakers img {
   width: 100%;
   max-width: 100%;
@@ -456,7 +463,7 @@ footer {
   cursor: default;
   background-color: transparent;
   border: 1px solid transparent;
-  border-bottom-color: #999;
+  border-right-color: #999;
 }
 .tab-content {
   padding-top: 20px;
@@ -502,7 +509,7 @@ footer {
 /* Counter section styles
 /* ========================================== */
 #counter {
-   background: url('http://ob89r3lvl.bkt.clouddn.com/counter-bg.jpg-big') 50% 0 repeat-y fixed;
+   background: url('http://ob89r3lvl.bkt.clouddn.com/counter-bg.jpg-big');
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
@@ -586,7 +593,7 @@ p {
     Regsiter section
 -----------------------------------------*/
 #register {
-    background: url('http://ob89r3lvl.bkt.clouddn.com/register-bg.jpg-big') 50% 0 repeat-y fixed;
+    background: url('http://ob89r3lvl.bkt.clouddn.com/register-bg.jpg-big');
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -673,7 +680,7 @@ p {
 }
 
 #faq .panel-heading .panel-title a[data-toggle="collapse"]::after {
-  content: "➖";
+  content: "-";
   display: block;
   position: absolute;
   line-height: 1;
@@ -683,7 +690,7 @@ p {
 }
 
 #faq .panel-heading .panel-title a[data-toggle="collapse"].collapsed::after {
-  content: "➕";
+  content: "+";
 }
 
 
@@ -692,7 +699,7 @@ p {
    Venue section
 -----------------------------------------*/
 #venue {
-    background: url('http://ob89r3lvl.bkt.clouddn.com/venue-bg.jpg-big') 50% 0 repeat-y fixed;
+    background: url('http://ob89r3lvl.bkt.clouddn.com/venue-bg.jpg-big');
     background-size: cover;
     background-position: center center;
     padding-top: 7rem;
@@ -719,8 +726,8 @@ p {
    Contact section
 -----------------------------------------*/
 #contact {
-    background: url('http://ob89r3lvl.bkt.clouddn.com/contact-bg.jpg-big') 50% 0 repeat-y fixed;
-    background-size: cover;
+    background: url('http://ob89r3lvl.bkt.clouddn.com/contact-bg.jpg-big');
+    background-size: cover !important;
     background-position: center center;
 }
 
@@ -780,7 +787,7 @@ footer {
 
 /* Back top */
 .go-top {
-  background-color:rgba(144, 144, 144, 0.3);;
+  background-color:rgba(44, 44, 44, 0.4);;
   bottom: 2em;
   right: 2em;
   color: #ffffff;
@@ -886,11 +893,15 @@ footer {
 
   #sponsors img {
     padding-top: 22px;
+		padding-left: 90px;
   }
 
   #contact .contact_detail {
     margin-top: 82px;
   }
+	.thumbnail-a img{
+		width: 100%;
+	}
 
 }
 
@@ -924,4 +935,14 @@ footer {
 }
 #show.gray:hover{
 	background-color:none;
+}
+#global{
+	padding:30px 0 10px 0;
+	background:#fff;
+}
+#global col-md-3{
+	  display: block;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 22px;
 }
