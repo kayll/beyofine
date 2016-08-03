@@ -2,7 +2,7 @@
 
 body {
 		background: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', '微软雅黑',sans-serif;
     font-style: normal;
 		font-weight: 400;
 }
@@ -118,8 +118,8 @@ footer {
   color: #ffffff;
 }
 #venue .btn-danger:hover {
-  background: #000000;
-  border-color: #000000;
+  background: #333333;
+  border-color: #ffffff;
   color: #ffffff;
 }
 
@@ -946,3 +946,24 @@ footer {
     padding-bottom: 20px;
     margin-bottom: 22px;
 }
+
+/*footer*/
+ .footer{
+   position: relative;
+   background-color:rgb(255,255,255);
+   padding: 10px 15px;
+ }
+ .footer a{
+   color:#333
+ }
+ .left,
+ .middle{
+   margin-top:45px;
+ }
+ .right img{
+   width:40%;
+   border-radius: 2px;
+ }
+ .footer a:hover{
+   color: #f2545f;
+ }
