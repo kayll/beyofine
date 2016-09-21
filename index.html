@@ -13,9 +13,11 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://ob89r3lvl.bkt.clouddn.com/114.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://ob89r3lvl.bkt.clouddn.com/72.png">
 <link rel="apple-touch-icon-precomposed" href="http://ob89r3lvl.bkt.clouddn.com/57.png">
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+<link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="css/owl.theme.css">
 <link rel="stylesheet" href="css/owl.carousel.css">
 
@@ -104,6 +106,10 @@
     height: auto;
 }
 
+@media (max-width: 980px){
+ .dropdown-menu {display: none;}
+}
+
 
 </style>
 
@@ -123,17 +129,19 @@
 <!-- =========================
      导航栏 LINKS
 ============================== -->
+
 <div class="navbar navbar-fixed-top custom-navbar" role="navigation">
 	<div class="container">
 
 		<!-- navbar header -->
 		<div class="navbar-header">
-			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="/" class="navbar-brand">碧云轩咨询</a>
+			<a href="/" class="navbar-brand hidden-sm">碧云轩咨询</a>
       <!-- <a class="navbar-brand" href="/">
       	<h1><img src="http://ob89r3lvl.bkt.clouddn.com/biyunxuan22.jpg" alt="logo"></h1>
       </a> -->
@@ -147,10 +155,10 @@
 				<li><a href="/studytour" class="smoothScroll">游学</a></li>
 				<!-- <li><a href="Broker.html" class="smoothScroll">留学</a></li> -->
 				<li class="dropdown">
-		          <a class="dropdown-toggle" data-toggle="dropdown" style="background:transparent;cursor: pointer;">精英项目<span class="caret"></span></a>
-		          <ul class="dropdown-menu" role="menu" style="background:rgba(41, 41, 41,0.9);">
-		            <li><a href="/accountantInternship">四大精英实习</a></li>
-		            <li><a href="/accountantTraining">四大高端培训</a></li>
+		          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" style="background:transparent;cursor: pointer;">保offer项目<span class="caret"></span></a>
+		          <ul class="dropdown-menu" style="background:rgba(41, 41, 41,0.9);">
+		            <li><a href="/accountantInternship" target="_blank">八大精英实习</a></li>
+		            <li><a href="/accountantTraining" target="_blank">四大高端培训</a></li>
 		          </ul>
 		        </li>
 				<li><a href="/about" class="smoothScroll">关于我们</a></li>
@@ -172,7 +180,9 @@
 				<!-- <h3 class="wow bounceIn" data-wow-delay="0.9s">知识｜视野｜年轻</h3> -->
 				<h1 class="wow fadeInUp" data-wow-delay="1.6s">我们&nbsp;与你同行，不离不弃</h1>
 				<a href="/broker" class="btn btn-lg btn-danger smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s" style="font-size:20px">券商实习</a>
-				<a href="/studytour" class="btn btn-lg btn-danger smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s" style="font-size:20px">硅谷游学</a>
+                <a href="/studytour" class="btn btn-lg btn-danger smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s" style="font-size:20px">硅谷游学</a>
+                <a href="/accountantInternship" class="btn btn-lg btn-danger smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s" style="font-size:20px">八大精英实习</a>
+				<a href="/accountantTraining" class="btn btn-lg btn-danger smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s" style="font-size:20px">四大高端培训</a>
 				<!-- <a href="#register" class="btn btn-lg btn-danger smoothScroll wow fadeInUp" data-wow-delay="2.3s">立即申请</a> -->
 			</div>
 		</div>
@@ -483,15 +493,10 @@
 		<div class="row">
 
 			<div class="wow fadeInLeft col-md-offset-1 col-md-5 col-sm-8" data-wow-delay="0.9s">
-				<h2>报名标准</h2>
-				<p style="padding-top: 0px;padding-bottom: 0px;">	A.在校大学生&nbsp;<br>
-          B.具有良好的英文和中文能力&nbsp;<br>
-          C.拥有对从事金融行业的专业意向和目标&nbsp;<br>
-          D.金融、财务、会计、数学、统计、数量经济等专业学生优先</p>
-				<h2>报名方式</h2>
-        <p style="padding-top: 0px;padding-bottom: 0px;">Step 1: 在线申请  Step 2: 提交申请,详情点击下面按钮查看.</p>
-        <a href="/broker" class="btn btn-danger" style="margin-top: 3px;font-size:16px">券商实习详情</a>
-        <a href="/studytour" class="btn btn-danger" style="margin-top: 3px;font-size:16px">硅谷游学详情</a>
+				<h2>碧云轩咨询</h2>
+				<p>碧云轩成立于南审，坐标古都南京，创建的主要目的，是建立一个连接名校优秀学生、世界500强企业的交流平台。通过对接京沪、江浙以及海外的社会优秀资源，让更多的年轻菁英，在这个平台上分享自己的学识和经验。想达到的效果是让同学们拓展视野，获得更广阔、更优质的社交资源，提前接触丰富的行业职场信息，创造更多的机会，提升同学们的个人能力和综合素质。</p>
+        <a href="/about" class="btn btn-danger" style="margin-top: 3px;font-size:16px">关于我们</a>
+        <a href="http://js.ifeng.com/business/detail_2015_06/08/3980985_0.shtml?_share=weixin&from=timeline&isappinstalled=0" class="btn btn-danger" style="margin-top: 3px;font-size:16px" target="_bla">媒体报道</a>
 			</div>
 		</div>
 	</div>
@@ -536,10 +541,10 @@
         <a href="/about" target="_blank">我们团队</a>｜
         <a href="/about" target="_blank">联系我们</a>｜
         <a href="/about" target="_blank">加入我们</a>｜
-        <a href="/" target="_blank">合作伙伴</a>
+        <a href="www.careerfore.com" target="_blank">合作伙伴</a>
       </p>
       <p class="bottom">Copyright&copy;2016
-        <a href="/" target="_blank">南京碧云轩教育信息咨询有限公司</a>
+        <a href="www.careerfore.com" target="_blank">南京碧云轩教育信息咨询有限公司</a>
        </p>
     </div>
     <div class="col-md-3 right" style="text-align:center">
@@ -558,10 +563,15 @@
 <!-- =========================
      SCRIPTS
 ============================== -->
+<script type="text/javascript">
+    $('.dropdown-toggle').dropdown();
+</script>
 
 <!-- <script src="js/jquery.js"></script> -->
-<script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script> -->
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="js/jquery.parallax.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/smoothscroll.js"></script>
