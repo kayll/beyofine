@@ -276,6 +276,13 @@ footer {
 .Aboutus{
 	background: url('http://ob89r3lvl.bkt.clouddn.com/building.jpg-big');
 }
+.accountantTraining{
+  background: url('http://img.careerfore.com/photo.jpg-big');
+}
+.accountantInternship{
+  background: url('http://img.careerfore.com/type-away.jpg-big');
+
+}
 #intro {
     -webkit-background-size: cover;
     background-size: cover;
@@ -704,6 +711,7 @@ p {
     background-position: center center;
     padding-top: 7rem;
     padding-bottom: 7rem;
+    background-repeat: no-repeat;
 }
 
 #venue p {
