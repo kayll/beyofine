@@ -19,6 +19,8 @@
 <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 <link href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/animate.css">
+<link href="http://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css" rel="stylesheet">
+<link href="http://cdn.bootcss.com/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.css" rel="stylesheet">
 <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
 <link rel="stylesheet" href="css/owl.theme.css">
@@ -94,13 +96,29 @@
 .featured-image:hover {
     opacity: 0.9;
     color: #fff;
-    background: rgba(0,0,0,0.8);
+    background:#f2545f;
+    opacity: 0.8;
     width: inherit;
-
+    font-size: 20px;
+    cursor: pointer;
 }
+
+.featured-image:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 60px;
+    left: 40px;
+    right: 40px;
+    bottom: 60px;
+    border-top: 1px double rgba(255,255,255,0.6);
+    border-bottom: 1px double rgba(255,255,255,0.6);
+}
+
 .featured :hover {
     opacity: 0.9;
-    background:rgba(0,0,0,0.2);
+    background:#f2545f;
 }
 .post-thumbnail img {
     display: block;
@@ -108,12 +126,6 @@
     max-width: 100%;
     height: auto;
 }
-
-@media (max-width: 980px){
- .dropdown-menu {display: none;}
-}
-
-
 </style>
 
 </head>
@@ -144,10 +156,10 @@
 				<span class="icon icon-bar"></span>
 				<span class="icon icon-bar"></span>
 			</button>
-			<a href="/" class="navbar-brand hidden-sm">碧云轩咨询</a>
-      <!-- <a class="navbar-brand" href="/">
-      	<h1><img src="http://ob89r3lvl.bkt.clouddn.com/biyunxuan22.jpg" alt="logo"></h1>
-      </a> -->
+<!-- 			<a href="/" class="navbar-brand hidden-sm">碧云轩咨询</a>
+ -->    <a class="navbar-brand" href="/">
+      	   <img src="http://img.careerfore.com/logobeyofine.png" alt="logo">
+        </a>
 		</div>
 
 		<div class="collapse navbar-collapse">
@@ -157,15 +169,15 @@
 				<li><a href="/broker" class="smoothScroll">券商实习</a></li>
 				<li><a href="/studytour" class="smoothScroll">硅谷游学</a></li>
 				<!-- <li><a href="Broker.html" class="smoothScroll">留学</a></li> -->
-<!-- 				<li class="dropdown">
-		          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" style="background:transparent;cursor: pointer;">保offer项目<span class="caret"></span></a>
+				<!-- <li class="dropdown">
+		          <a href="/" class="dropdown-toggle" data-toggle="dropdown" style="background:transparent;cursor: pointer;">保offer项目<span class="caret"></span></a>
 		          <ul class="dropdown-menu" style="background:rgba(41, 41, 41,0.9);">
 		            <li><a href="/accountantInternship" target="_blank">八大精英实习</a></li>
 		            <li><a href="/accountantTraining" target="_blank">四大高端培训</a></li>
 		          </ul>
-		        </li>
+		        </li> -->
 
- -->			
+			
                 <li><a href="/accountantInternship" class="smoothScroll">八大精英实习</a></li>
                 <li><a href="/accountantTraining" class="smoothScroll">四大高端培训</a></li>
                 <li><a href="/about" class="smoothScroll">关于我们</a></li>
@@ -175,7 +187,42 @@
 	</div>
 </div>
 
-
+<!-- <div class="body-wrapper">
+  <div class="navbar">
+    <div class="navbar-header">
+      <div class="container">
+        <div class="basic-wrapper"> 
+            <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a> 
+            <a class="navbar-brand" href="index.html"><img src="style/images/logo.png" alt="" data-src="style/images/logo.png" data-ret="style/images/logo@2x.png" class="retina" /></a> 
+        </div>
+        <nav class="collapse navbar-collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" class="js-activated">首页</a></li>
+            <li><a href="about.html" class="js-activated">关于斯雅</a></li>
+            <li class="dropdown"><a href="hongkong.html" class="dropdown-toggle js-activated">项目介绍</a>
+              <ul class="dropdown-menu">
+                <li><a href="hongkong.html">香港项目</a></li>
+                <li><a href="newyork.html">美国项目</a></li>
+                <li><a href="singapore.html">新加坡项目</a></li>
+                <li><a href="euro.html">欧洲项目</a></li>
+                <li><a href="antarctica.html">南极项目</a></li>
+                <li><a href="volunteer.html">志愿者活动</a></li>
+              </ul>
+            </li>  
+            <li><a href="photo_and_video.html" class="js-activated">视频与照片</a></li>
+            <li><a href="hlc.html" class="js-activated">校园合伙人</a></li>
+             <!-- <li><a href="hcia_ten.html" class="js-activated">斯雅十年</a></li>  -->             
+    <!--       </ul>
+          <ul class="social pull-right">
+            <li><a href="http://apply.hcia.co" class="btn" target="_blank">在线申请</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--/.nav-collapse --> 
+  <!-- </div>
+ -->
+ 
 <!-- =========================
     首页SECTION
 ============================== -->
@@ -283,58 +330,59 @@
         <div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/2.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
-            <h1 class="entry-title"><a  class="featured-image" rel="bookmark">一群纯粹而有信念的追求者</a></h1>
+            <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/2.pic.jpg">一群纯粹而有信念的追求者</a></h1>
             </div>
         </div>
         <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img  src="http://ob89r3lvl.bkt.clouddn.com/3.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
-            <h1 class="entry-title"><a  class="featured-image" rel="bookmark">一群脚踏实地的梦想家</a></h1>
+            <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/3.pic.jpg">一群脚踏实地的梦想家</a></h1>
             </div>
         </div>
         <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/1.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
-            <h1 class="entry-title"><a  class="featured-image" rel="bookmark">把简单的事情做到完美</a></h1>
+            <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/1.pic.jpg">把简单的事情做到完美</a></h1>
             </div>
         </div>
         <div class="col-md-12"></div>
         <div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/4.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
-            <h1 class="entry-title"><a  class="featured-image" rel="bookmark">俯身为梯，让你成为万分之一</a></h1>
+            <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/4.pic.jpg">俯身为梯，让你成为万分之一</a></h1>
             </div>
         </div>
         <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
-            <div class="post-thumbnail"> <img  src="http://ob89r3lvl.bkt.clouddn.com/9.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
-            <div class="content-wrap">
-            <h1 class="entry-title"><a  class="featured-image" rel="bookmark">大家的碧云轩，与你同行</a></h1>
-            </div>
+            <div class="post-thumbnail"> <img  src="http://ob89r3lvl.bkt.clouddn.com/9.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702" style="box-shadow:none"> </div>
         </div>
         <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/5.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
-            <h1 class="entry-title"><a  class="featured-image" rel="bookmark">改变｜为了成为最好的自己</a></h1>
+            <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/5.pic.jpg">改变｜为了成为最好的自己</a></h1>
             </div>
         </div>
         <div class="col-md-12"></div>
         <div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/6.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
-            <h1 class="entry-title"><a  class="featured-image" rel="bookmark">成长｜从迈出这一步开始</a></h1>
+            <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/6.pic.jpg">成长｜从迈出这一步开始</a></h1>
             </div>
         </div>
         <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img  src="http://ob89r3lvl.bkt.clouddn.com/7.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
-            <h1 class="entry-title"><a class="featured-image" rel="bookmark">我们｜愿能心怀阳关，在黑夜中跳舞</a></h1>
+            <h1 class="entry-title"><a class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/7.pic.jpg">我们｜愿能心怀阳关，在黑夜中跳舞</a></h1>
             </div>
         </div>
+        </div>
         <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.2s">
-            <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/8.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
+            <div class="post-thumbnail">
+            <img src="http://ob89r3lvl.bkt.clouddn.com/8.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702">
             <div class="content-wrap">
-            <h1 class="entry-title"><a class="featured-image" rel="bookmark">我们｜愿迎着散落月光，向未来歌唱</a></h1>
+            <h1 class="entry-title"><a class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/8.pic.jpg">我们｜愿迎着散落月光，向未来歌唱</a></h1>
             </div>
+            </div>
+            
         </div>
       </div>
     </div>
@@ -353,7 +401,8 @@
             </div> -->
         </div>
         <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
-            <div class="thumbnail-a" style="float:right"><a href="/studytour"> <img  src="http://ob89r3lvl.bkt.clouddn.com/%E7%A1%85%E8%B0%B7%E6%B8%B8%E5%AD%A6.png" class="attachment-thumbnail wp-post-image" alt="105694702" width="95%"> </a></div>
+            <div class="thumbnail-a" style="float:right"><a href="/studytour"> 
+            <img  src="http://ob89r3lvl.bkt.clouddn.com/%E7%A1%85%E8%B0%B7%E6%B8%B8%E5%AD%A6.png" class="attachment-thumbnail wp-post-image" alt="105694702" width="95%"> </a></div>
 <!--             <div class="content-wrap">
             <h1 class="entry-title" style="height:100%;width:100%"><a href="/studytour" class="featured" rel="bookmark"></a></h1>
             </div> -->
@@ -570,10 +619,6 @@
 <!-- =========================
      SCRIPTS
 ============================== -->
-<script type="text/javascript">
-    $('.dropdown-toggle').dropdown();
-</script>
-
 <!-- <script src="js/jquery.js"></script> -->
 <!-- <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script> -->
@@ -584,6 +629,27 @@
 <script src="js/smoothscroll.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="http://cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.js"></script>
+<script src="http://cdn.bootcss.com/fancybox/2.1.5/helpers/jquery.fancybox-thumbs.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.dropdown-toggle').dropdown();
+    $(".fancybox-thumb").fancybox({
+        prevEffect  : 'none',
+        nextEffect  : 'none',
+        helpers : {
+            title   : {
+                type: 'outside'
+            },
+            thumbs  : {
+                width   : 50,
+                height  : 50
+            }
+        }
+    });
+});
+    
+</script>
 
 </body>
 </html>

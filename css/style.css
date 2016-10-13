@@ -194,6 +194,19 @@ footer {
 /*---------------------------------------
     Navigation Links section
 -----------------------------------------*/
+.navbar-brand {
+    padding: 0;
+    padding-top: 20px;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
 .custom-navbar {
     margin-bottom: 0;
     background-color:#292929;
@@ -245,6 +258,13 @@ footer {
     border-color: transparent;
 }
 
+@media (min-width: 768px)
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    /* margin-right: 0; */
+    margin-left: 0;
+}
+
+
 @media(min-width:768px) {
     .custom-navbar {
         padding: 20px 0;
@@ -255,7 +275,11 @@ footer {
         background:rgba(41, 41, 41,0.9);
         padding: 0;
     }
+}
 
+ .container>.navbar-collapse {
+        margin-right: -15px !important; 
+        margin-left: -15px !important; 
 }
 
 
@@ -859,11 +883,12 @@ footer {
 
   .custom-navbar .navbar-brand {
     font-size: 2rem;
+    padding: 8px 15px;
   }
 
   .custom-navbar .nav li a {
     font-size: 11px;
-	line-height: 20px;
+  	line-height: 20px;
   }
 
   #intro { height: 65vh; }
@@ -883,6 +908,7 @@ footer {
 
   .custom-navbar .navbar-brand {
     line-height: 20px;
+    padding: 8px 15px;
   }
 
   #overview img,
