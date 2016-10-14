@@ -94,7 +94,7 @@ footer {
     font-weight: 600;
     letter-spacing: 1px;
     font-size: 12px;
-    padding: 14px 42px;
+    padding: 14px 14px;
     margin-top: 42px;
     margin-right: 12px;
     -webkit-transition: all 0.4s ease-in-out;
@@ -289,7 +289,7 @@ footer {
 -----------------------------------------*/
 /*common*/
 .help{
-	background: url('http://ob89r3lvl.bkt.clouddn.com/help.jpg-big');
+	background: url('http://img.careerfore.com/laptop-1205256_1920.jpg-big');
 }
 .broker{
 	background: url('http://ob89r3lvl.bkt.clouddn.com/intro-bg.jpg-big');
@@ -501,8 +501,8 @@ footer {
 }
 /*学员收获section*/
 #testimonial, #blog, #counter, #contact {
-   	padding-top: 120px;
-  	padding-bottom: 120px;
+   	padding-top: 30px;
+  	padding-bottom: 30px;
 }
 #testimonial h2, #testimonial h4 {
   text-align: center;
@@ -761,6 +761,7 @@ p {
     background: url('http://ob89r3lvl.bkt.clouddn.com/contact-bg.jpg-big');
     background-size: cover !important;
     background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #contact .contact_des {

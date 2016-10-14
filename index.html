@@ -61,19 +61,22 @@
     padding: 0;
     position: absolute;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
     top: 0;
     bottom: 0;
     display: table-cell;
     vertical-align: middle;
     overflow: hidden;
+    left: 15px;
+    right: 15px;
+    height: 92.6%;
 }
 .content-wrap h1.entry-title {
     display: table;
     font-size: 100%;
-    height: 92%;
+    height: 100%;
     text-transform: uppercase;
-    width: 92.6%;
+    width: 100%;
     margin:0;
 }
 .edit-link {
@@ -127,6 +130,73 @@
     max-width: 100%;
     height: auto;
 }
+
+/*    blog posts    */
+.blog_posts{
+    margin-top: 100px;
+    padding: 100px 0;
+    background: #fafafa;
+}
+
+.blog_posts ul{
+    list-style: none;
+    margin-top: 70px;
+}
+
+.blog_posts ul li{
+    display: block;
+    width: 230px;
+    margin-left: 60px;
+    float: left;
+}
+
+.blog_posts ul li:first-child{
+    margin-left: 0;
+}
+
+.blog_posts ul li .media .date{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 40px;
+    padding: 10px 0;
+    background: rgba(62, 62, 62, .7);
+    text-align: center;
+}
+
+.blog_posts ul li .media .date span{
+    display: block;
+}
+
+.blog_posts ul li .media .date .day{
+    color: #fff;
+    font-family: "raleway-bold";
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.blog_posts ul li .media .date .month{
+    color: #fff;
+    font-family: "raleway-regular";
+    font-size: 12px;
+}
+
+.blog_posts ul li .media{
+    width: 230px;
+    height: 230px;
+    position: relative;
+}
+
+.blog_posts ul li h1{
+    color: #616161;
+    font-family: "raleway-regular";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 20px 0 0 0;
+}
+
 </style>
 
 </head>
@@ -230,10 +300,10 @@
 <section id="intro" class="parallax-section help">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 col-sm-12">
-				<h3 class="wow bounceIn" data-wow-delay="0.9s">工作｜生活｜朋友</h3>
+			<div class="col-md-12 col-sm-12" style="margin-top:100px">
+				<h3 class="wow bounceIn" data-wow-delay="0.9s">定制化｜个性化｜线上线下结合</h3>
 				<!-- <h3 class="wow bounceIn" data-wow-delay="0.9s">知识｜视野｜年轻</h3> -->
-				<h1 class="wow fadeInUp" data-wow-delay="1.6s">我们&nbsp;与你同行，不离不弃</h1>
+				<h1 class="wow fadeInUp" data-wow-delay="1.6s">一站式名企参访／实习／培训／全职服务。</h1>
 				<a href="/broker" class="btn btn-lg btn-danger smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s" style="font-size:20px">券商实习</a>
                 <a href="/studytour" class="btn btn-lg btn-danger smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s" style="font-size:20px">硅谷游学</a>
                 <a href="/accountantInternship" class="btn btn-lg btn-danger smoothScroll wow fadeInUp hidden-xs" data-wow-delay="2.3s" style="font-size:20px">八大精英实习</a>
@@ -299,13 +369,100 @@
       			</div>
 			<!-- <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
 			</div> -->
-			<br>
-			<br>
-			<br>
+
 		</div>
 	</div>
-  <hr>
 </section>
+
+<!--项目集锦-->
+<section class="blog_posts">
+        <div class="container">
+        <div class="row">
+        <div class="wrapper" style="text-align:center">
+            <div class="title animated wow fadeIn">
+                <h2>最火爆的高端项目来袭...</h2>
+                <h4>碧云轩咨询为你量身打造一站式服务</h4>
+                <hr class="separator"/>
+            </div>
+
+            <ul class="clearfix">
+              <div class="col-md-3 col-sm-3">
+                <li class="animated wow fadeInDown">
+                    <div class="media">
+                      
+                        <div class="date">
+                            <a href="/contact">
+                            <span class="day">报名</span>
+                            </a>
+                        </div>
+                        <a href="/broker">
+                            <img src="http://img.careerfore.com/study.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <a href="/broker">
+                        <h1>顶级券商实战课程</h1>
+                    </a>
+                </li>
+               </div>
+               <div class="col-md-3 col-sm-3">
+                <li class="animated wow fadeInDown" data-wow-delay=".2s">
+                    <div class="media">
+                        <div class="date">
+                          <a href="/contact">
+                            <span class="day">报名</span>
+                            </a>
+
+                        </div>
+                        <a href="/studytour">
+                            <img src="http://img.careerfore.com/broker.jpg" alt=""/>
+                        </a>
+                    </div>                  
+                    <a href="/studytour">
+                        <h1>斯坦福大学课程&硅谷创新实训项目</h1>
+                    </a>
+                </li>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                <li class="animated wow fadeInDown" data-wow-delay=".4s">
+                    <div class="media">
+                        <div class="date">
+                        <a href="/contact">
+                            <span class="day">报名</span>
+                            </a>
+
+                        </div>
+                        <a href="/accountantInternship">
+                            <img src="http://img.careerfore.com/bada.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <a href="/accountantInternship">
+                        <h1>顶级会计事务所精英实习项目 (保offer)</h1>
+                    </a>
+                </li>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                <li class="animated wow fadeInDown" data-wow-delay=".6s">
+                    <div class="media">
+                        <div class="date">
+                        <a href="/contact">
+                            <span class="day">报名</span>
+                            </a>
+
+                        </div>
+                        <a href="/accountantTraining">
+                            <img src="http://img.careerfore.com/accout.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <a href="/accountantTraining"><h1>四大会计事务所高端培训项目（保offer）</h1>
+                </a>
+                </li>
+                </div>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </section><!--  End blog_posts  -->
+
 
 <!--往期展示 SECTION-->
 <section id="speakers" class="parallax-section" style="padding:30px 0 10px 0;background:#fff;">
@@ -598,10 +755,10 @@
         <a href="/about" target="_blank">我们团队</a>｜
         <a href="/about" target="_blank">联系我们</a>｜
         <a href="/about" target="_blank">加入我们</a>｜
-        <a href="www.careerfore.com" target="_blank">合作伙伴</a>
+        <a href="http://www.careerfore.com" target="_blank">合作伙伴</a>
       </p>
       <p class="bottom">Copyright&copy;2016
-        <a href="www.careerfore.com" target="_blank">南京碧云轩教育信息咨询有限公司</a>
+        <a href="/" target="_blank">南京碧云轩教育信息咨询有限公司</a>
        </p>
     </div>
     <div class="col-md-3 right" style="text-align:center">
