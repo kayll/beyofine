@@ -105,6 +105,11 @@
     width: inherit;
     font-size: 20px;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .featured-image:before {
@@ -202,6 +207,31 @@
     line-height: 26px;
     margin: 20px 0 0 0;
 }
+.tran :hover img{
+  transform: scale(1.2,1.2);
+}
+.tran img{
+  transition: 500ms;
+}
+.Tran:hover img{
+  transform: scale(1.2,1.2);
+}
+.Tran img{
+  transition: 500ms;
+}
+
+.trans:hover img{
+  transform: scale(1.15,1);
+  -webkit-transition: all 0.3s ease;
+
+}
+.trans img{
+  transition: 500ms;
+  /*transition: all 0.3s ease;*/
+}
+.date{
+  z-index: 99999;
+}
 
 </style>
 
@@ -254,7 +284,7 @@
 		          </ul>
 		        </li> -->
 
-			
+
                 <li><a href="/accountantInternship" class="smoothScroll">八大精英实习</a></li>
                 <li><a href="/accountantTraining" class="smoothScroll">四大高端培训</a></li>
                 <li><a href="/about" class="smoothScroll">关于我们</a></li>
@@ -264,7 +294,7 @@
 	</div>
 </div>
 
- 
+
 <!-- =========================
     首页SECTION
 ============================== -->
@@ -311,7 +341,7 @@
 	<div class="container">
 		<div class="row">
 
-			<div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.3s">
+			<div class="wow fadeInLeft tran col-md-4 col-sm-4" data-wow-delay="0.3s">
         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
             <img src="http://ob89r3lvl.bkt.clouddn.com/learn90-90.jpg" alt="">
         </div>
@@ -325,14 +355,14 @@
 			<!-- <div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.3s">
 			</div> -->
 
-			<div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+			<div class="wow fadeInUp tran col-md-4 col-sm-4" data-wow-delay="0.6s">
         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
             <img src="http://ob89r3lvl.bkt.clouddn.com/student90-90.png" alt="">
         </div>
 				<h3>职业规划量身打造，帮你摆脱迷茫</h3>
 			</div>
 
-      			<div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.9s">
+      			<div class="wow fadeInRight tran col-md-4 col-sm-4" data-wow-delay="0.9s">
               <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
                   <img src="http://ob89r3lvl.bkt.clouddn.com/coffe90-90.png" alt="">
               </div>
@@ -360,13 +390,13 @@
               <div class="col-md-3 col-sm-3">
                 <li class="animated wow fadeInDown">
                     <div class="media">
-                      
+
                         <div class="date">
                             <a href="/contact">
                             <span class="day">报名</span>
                             </a>
                         </div>
-                        <a href="/broker">
+                        <a class="Tran" href="/broker">
                             <img src="http://img.careerfore.com/study.jpg" alt=""/>
                         </a>
                     </div>
@@ -384,10 +414,10 @@
                             </a>
 
                         </div>
-                        <a href="/studytour">
+                        <a class="Tran" href="/studytour">
                             <img src="http://img.careerfore.com/broker.jpg" alt=""/>
                         </a>
-                    </div>                  
+                    </div>
                     <a href="/studytour">
                         <h1>斯坦福大学课程&硅谷创新实训项目</h1>
                     </a>
@@ -399,10 +429,9 @@
                         <div class="date">
                         <a href="/contact">
                             <span class="day">报名</span>
-                            </a>
-
+                        </a>
                         </div>
-                        <a href="/accountantInternship">
+                        <a class="Tran" href="/accountantInternship">
                             <img src="http://img.careerfore.com/bada.jpg" alt=""/>
                         </a>
                     </div>
@@ -420,7 +449,7 @@
                             </a>
 
                         </div>
-                        <a href="/accountantTraining">
+                        <a class="Tran" href="/accountantTraining">
                             <img src="http://img.careerfore.com/accout.jpg" alt=""/>
                         </a>
                     </div>
@@ -456,62 +485,62 @@
     <div class="container">
       <div class="row">
       <div class="post-format-content">
-        <div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.2s">
+        <div class="wow fadeInLeft trans col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/2.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
             <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/2.pic.jpg">一群纯粹而有信念的追求者</a></h1>
             </div>
         </div>
-        <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
+        <div class="wow fadeInUp trans col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img  src="http://ob89r3lvl.bkt.clouddn.com/3.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
             <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/3.pic.jpg">一群脚踏实地的梦想家</a></h1>
             </div>
         </div>
-        <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.2s">
+        <div class="wow fadeInRight trans col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/1.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
             <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/1.pic.jpg">把简单的事情做到完美</a></h1>
             </div>
         </div>
         <div class="col-md-12"></div>
-        <div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.2s">
+        <div class="wow fadeInLeft trans col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/4.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
             <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/4.pic.jpg">俯身为梯，让你成为万分之一</a></h1>
             </div>
         </div>
-        <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
+        <div class="wow fadeInUp tran col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img  src="http://ob89r3lvl.bkt.clouddn.com/9.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702" style="box-shadow:none"> </div>
         </div>
-        <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.2s">
+        <div class="wow fadeInRight trans col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/5.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
             <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/5.pic.jpg">改变｜为了成为最好的自己</a></h1>
             </div>
         </div>
         <div class="col-md-12"></div>
-        <div class="wow fadeInLeft col-md-4 col-sm-4" data-wow-delay="0.2s">
+        <div class="wow fadeInLeft trans col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img src="http://ob89r3lvl.bkt.clouddn.com/6.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
             <h1 class="entry-title"><a  class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/6.pic.jpg">成长｜从迈出这一步开始</a></h1>
             </div>
         </div>
-        <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
+        <div class="wow fadeInUp trans col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail"> <img  src="http://ob89r3lvl.bkt.clouddn.com/7.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702"> </div>
             <div class="content-wrap">
             <h1 class="entry-title"><a class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/7.pic.jpg">我们｜愿能心怀阳关，在黑夜中跳舞</a></h1>
             </div>
         </div>
         </div>
-        <div class="wow fadeInRight col-md-4 col-sm-4" data-wow-delay="0.2s">
+        <div class="wow fadeInRight trans col-md-4 col-sm-4" data-wow-delay="0.2s">
             <div class="post-thumbnail">
             <img src="http://ob89r3lvl.bkt.clouddn.com/8.pic.jpg-medium768" class="attachment-thumbnail wp-post-image" alt="105694702">
             <div class="content-wrap">
             <h1 class="entry-title"><a class="featured-image fancybox-thumb" rel="bookmark" href="http://ob89r3lvl.bkt.clouddn.com/8.pic.jpg">我们｜愿迎着散落月光，向未来歌唱</a></h1>
             </div>
             </div>
-            
+
         </div>
       </div>
     </div>
@@ -530,7 +559,7 @@
             </div> -->
         </div>
         <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.2s">
-            <div class="thumbnail-a" style="float:right"><a href="/studytour"> 
+            <div class="thumbnail-a" style="float:right"><a href="/studytour">
             <img  src="http://ob89r3lvl.bkt.clouddn.com/%E7%A1%85%E8%B0%B7%E6%B8%B8%E5%AD%A6.png" class="attachment-thumbnail wp-post-image" alt="105694702" width="95%"> </a></div>
 <!--             <div class="content-wrap">
             <h1 class="entry-title" style="height:100%;width:100%"><a href="/studytour" class="featured" rel="bookmark"></a></h1>
@@ -777,7 +806,7 @@ $(document).ready(function() {
         }
     });
 });
-    
+
 </script>
 
 </body>
